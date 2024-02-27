@@ -358,6 +358,9 @@ function previewImage() {
 
 
 
+
+
+
 function toggleExperienceSection() {
   var experienceSection = document.getElementById("experience-section");
   var includeExperienceCheckbox = document.getElementById("include-experience");
@@ -370,6 +373,24 @@ function toggleExperienceSection() {
 
   generateCV(); // Call your function to update the CV content
 }
+
+
+
+
+
+var showExperiences = true; // Set this variable based on your condition
+
+// Get the experiences section element by its ID
+var experiencesSection = document.getElementById("experiencesSection");
+
+// Check the condition and toggle visibility
+if (experienceSection) {
+  experiencesSection.style.display = "block"; // Show the section
+} else {
+  experiencesSection.style.display = "none"; // Hide the section
+}
+
+
 
 
 // print CV
